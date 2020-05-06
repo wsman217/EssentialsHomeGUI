@@ -1,4 +1,4 @@
-package net.euphoriamc.EssentialsHomeGUI;
+package net.euphoriamc.essentialshomegui;
 
 import com.earth2me.essentials.User;
 import net.ess3.api.IEssentials;
@@ -41,6 +41,19 @@ public class EssentialsUtils {
             essentialsUser.setHome(newName, p.getLocation());
         } catch (Exception ignored) {
             return false;
+        }
+        return true;
+    }
+
+    public boolean teleportToHome(Player p, String home) {
+        User essentialsUser = essentials.getUser(p);
+        try {
+            Location loc = essentialsUser.getHome(home);
+            if (loc == null)
+                return false;
+            p.performCommand("essentials:home " + home);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return true;
     }

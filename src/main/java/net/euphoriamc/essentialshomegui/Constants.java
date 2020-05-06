@@ -1,4 +1,4 @@
-package net.euphoriamc.EssentialsHomeGUI;
+package net.euphoriamc.essentialshomegui;
 
 import org.bukkit.ChatColor;
 

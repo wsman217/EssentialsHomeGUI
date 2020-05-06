@@ -1,6 +1,6 @@
-package net.euphoriamc.EssentialsHomeGUI.gui;
+package net.euphoriamc.essentialshomegui.gui;
 
-import net.euphoriamc.EssentialsHomeGUI.gui.holder.RenameHolder;
+import net.euphoriamc.essentialshomegui.gui.holder.RenameHolder;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

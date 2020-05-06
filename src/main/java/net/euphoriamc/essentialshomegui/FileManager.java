@@ -1,4 +1,4 @@
-package net.euphoriamc.EssentialsHomeGUI;
+package net.euphoriamc.essentialshomegui;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;

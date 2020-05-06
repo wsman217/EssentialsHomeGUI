@@ -1,6 +1,6 @@
-package net.euphoriamc.EssentialsHomeGUI.commands;
+package net.euphoriamc.essentialshomegui.commands;
 
-import net.euphoriamc.EssentialsHomeGUI.gui.HomesSetupGUI;
+import net.euphoriamc.essentialshomegui.gui.holder.SetupHolder;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -23,7 +23,7 @@ public class EditGUICommand implements CommandExecutor {
             return true;
         }
 
-        HomesSetupGUI.openInventory(p);
+        new SetupHolder().openInventory(p);
         return true;
     }
 }
